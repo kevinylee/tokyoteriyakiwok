@@ -1,183 +1,78 @@
 import * as React from "react"
-
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
-
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
-
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
-
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
-
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
-
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-}
-
-// data
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    color: "#663399",
-  },
-]
+import TokyoLogo from "../images/tokyo-logo-small.jpeg"
+import Menu from "../images/menu.pdf"
+import Broccoli from "../images/Broccoli-Beef.png"
+import DoorDash from "../images/doordash.png"
+import UberEats from "../images/uber-eatspng.png"
 
 // markup
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Home Page</title>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time.{" "}
-        <span role="img" aria-label="Sunglasses smiley emoji">
-          😎
-        </span>
-      </p>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
+    <div className="main" class="font-manrope">
+      <header id="home" class="flex shrink justify-center items-center w-full">
+        <div class="flex flex-row flex-wrap items-center text-xl space-x-2 md:space-x-[25rem] md:mb-4">
+          <a href="#home">
+            <img class="w-[200px]" src={TokyoLogo} alt="Tokyo Teriyaki & Wok Logo"></img>
           </a>
-        </li>
-        {links.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
+          <div class="flex flex-row space-x-8">
+            <a class="hover:underline" target="_blank" rel="noreferrer" href={Menu}>Menu</a>
+            <a class="hover:underline" target="_blank" rel="noreferrer" href="https://www.doordash.com/store/tokyo-teriyaki-&-wok-marysville-119678/">Order</a>
+          </div>
+        </div>
+      </header>
+      <div class="flex flex-col justify-center items-center w-full md:mt-2 md:flex-row md:-space-x-40">
+        <img class="w-[34rem] shadow-sm"src={Broccoli} alt="Broccoli Beef"></img>
+        <div id="infoBox" class="flex flex-col justify-center bg-white pt-10 pb-10 pl-10 pr-7 space-y-12 max-h-66 shadow-2xl">
+          <div class="flex shrink space-x-36">
+            <p class="text-3xl">Hours</p>
+            <ul class="flex flex-col space-y-2 text-2xl">
+              <li>Mon - Sat</li>
+              <li>10:30AM-8:30 PM</li>
+            </ul>
+          </div>
+          <div class="flex shrink space-x-28">
+            <p class="text-3xl">Address</p>
+            <a class="text-2xl hover:underline" href="https://goo.gl/maps/4zbpbmwxqfRx9xEC7" rel="noreferrer" target="_blank">11603 State Ave #F, Marysville, WA 98271</a>
+          </div>
+          <div class="flex shrink space-x-36">
+            <p class="text-3xl">Phone</p>
+            <a class="text-2xl hover:underline" href="tel:+13603575040">360-657-5040</a>
+          </div>
+        </div>
+      </div>
+      <footer class="flex flex-col justify-center items-center shrink bottom-0 left-0 right-0 w-full bg-gray pt-4 pb-4 md:fixed">
+        <div>
+          <a href="#home">
+            <h1 class="flex justify-center text-lightgray mb-4 md:justify-start md:items-start">Tokyo Teriyaki & Wok</h1>
+          </a>
+          <div class="flex flex-col space-y-6  justify-center flex-wrap shrink mb-6 text-white md:space-y-0 md:space-x-24 md:flex-row">
+            <div class="flex flex-col sm:space-y-4">
+              <p class="text-xl">Hours</p>
+              <p class="text-sm">Mon - Sat</p>
+              <p class="text-sm">10:30am-8:30pm</p>
+            </div>
+            <div class="flex flex-col sm:space-y-4">
+              <p class="text-xl">Address</p>
+              <a class="text-sm hover:underline" href="https://goo.gl/maps/4zbpbmwxqfRx9xEC7" rel="noreferrer" target="_blank">
+                11603 State Ave #F, Marysville, WA 98271
               </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
-              )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
-    </main>
+            </div>
+            <div class="flex flex-col sm:space-y-4">
+              <p class="text-xl">Contact</p>
+              <a class="text-sm hover:underline" href="tel:+13603575040">360-657-5040</a>
+            </div>
+          </div>
+          <div class="flex flex-row justify-center items-center space-x-8 md:justify-end">
+            <a href="https://www.doordash.com/store/tokyo-teriyaki-&-wok-marysville-119678/" rel="noreferrer" target="_blank">
+              <img src={DoorDash} alt="DoorDash"></img>
+            </a>
+            <a href="https://www.ubereats.com/store/tokyo-teriyaki-%26-wok/K8Ve7ftMVv-XQPj881h7Og?ps=1" rel="noreferrer" target="_blank">
+              <img src={UberEats} alt="UberEats"></img>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
   )
 }
 

@@ -14,8 +14,19 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^4.12.1",
+    "@expo-google-fonts/caveat-brush": "^0.2.2",
+    "@fontsource/bree-serif": "^4.5.7",
+    "@fontsource/caveat-brush": "^4.5.7",
+    "@fontsource/ceviche-one": "^4.5.8",
+    "@fontsource/manrope": "^4.5.10",
+    "gatsby": "^4.16.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "gatsby-plugin-postcss": "^5.16.0",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24"
   }
 }
