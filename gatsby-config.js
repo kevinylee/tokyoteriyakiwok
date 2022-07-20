@@ -4,11 +4,11 @@ module.exports = {
     title: "Tokyo Teriyaki & Wok",
     description: "Serving delicious Teriyaki in Marysville, WA."
   },
-  plugins: [
+  plugins: [`react-helmet`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "G-1X65ZGDW7Y",
+        trackingId: "G-1X65ZGDW7Y", 
       },
     },
   ],
