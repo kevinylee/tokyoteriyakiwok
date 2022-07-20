@@ -1,7 +1,9 @@
 module.exports = {
   content: [
     "./src/pages/index.js",
-    "./src/pages/404.js"
+    "./src/pages/404.js",
+    "./src/components/info.js",
+    "./src/components/footer.js"
   ],
   theme: {
     width: {
