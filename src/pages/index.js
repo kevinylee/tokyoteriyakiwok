@@ -1,4 +1,5 @@
 import * as React from "react"
+import {Helmet} from "react-helmet"
 import TokyoLogo from "../images/tokyo-logo-small.jpeg"
 import Menu from "../images/menu.pdf"
 import Info from "../components/info"
@@ -8,6 +9,18 @@ import Footer from "../components/footer"
 const IndexPage = () => {
   return (
     <div className="main" class="font-manrope">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta property="og:type" content="website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tokyo Teriyaki & Wok - The Best Teriyaki in Washington</title>
+        <meta property="og:title" content="Tokyo Teriyaki & Wok - The Best Teriyaki in Washington" />
+        <meta property="og:description" content="Serving delicious Teriyaki in Marysville, WA." />
+        <meta property="og:url" content="https://www.tokyoteriyakiwok.com" />
+        <meta name="description" content="Serving delicious Teriyaki in Marysville, WA." />
+        <meta name="keywords" content="teriyaki, teriyaki marysville, tokyo, chicken teriyaki, japanese food" />
+        <meta name="author" content="Kevin Lee" />
+      </Helmet>
       <header id="home" class="flex shrink justify-center items-center w-full">
         <div class="flex flex-row flex-wrap items-center text-xl space-x-2 md:space-x-[25rem] md:mb-4">
           <a href="#home">
