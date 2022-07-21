@@ -4,8 +4,8 @@ import UberEats from "../images/uber-eatspng.png"
 
 const Footer = () => {
     return (
-        <footer>
-            <div class="flex flex-col justify-center items-center shrink bottom-0 left-0 right-0 w-full bg-gray pt-4 pb-4 md:fixed">
+        <footer class="flex flex-col justify-center items-center shrink bottom-0 left-0 right-0 w-full bg-gray pt-4 pb-4 md:fixed">
+            <div>
                 <a href="#home">
                     <h1 class="flex justify-center text-lightgray mb-4 md:justify-start md:items-start">Tokyo Teriyaki & Wok</h1>
                 </a>
