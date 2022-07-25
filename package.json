@@ -21,6 +21,7 @@
     "@fontsource/manrope": "^4.5.10",
     "gatsby": "^4.16.0",
     "gatsby-plugin-google-analytics": "^4.19.0",
+    "gatsby-plugin-google-gtag": "^4.19.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0"
