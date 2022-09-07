@@ -34,8 +34,8 @@ const IndexPage = () => {
           </div>
         </div>
       </header>
-      <div class="flex flex-col flex-wrap jusitify-center items-center text-red text-2xl">
-        <p>We will be CLOSED from 09/03 (Saturday) - 09/10 (Saturday) due to a Family Vacation.</p>
+      <div class="flex flex-col flex-wrap jusitify-center items-center text-red text-center text-2xl">
+        <p>We will be CLOSED from 09/03 (Saturday)-09/10 (Saturday) due to a Family Vacation.</p>
         <p>We will be OPEN back on 09/12 (Monday).</p>
         <p>Sorry for the inconvenience.</p>
       </div>
