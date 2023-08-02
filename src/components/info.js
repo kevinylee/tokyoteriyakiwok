@@ -19,7 +19,7 @@ const Info = (props) => {
                 </div>
                 <div class="flex shrink space-x-36">
                     <p class="text-3xl">Phone</p>
-                    <a class="text-2xl hover:underline" href="tel:+13603575040">360-657-5040</a>
+                    <a class="text-2xl hover:underline" href="tel:+13606575040">360-657-5040</a>
                 </div>
             </div>
         </div>
