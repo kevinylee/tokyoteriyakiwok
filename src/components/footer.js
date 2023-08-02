@@ -23,7 +23,7 @@ const Footer = () => {
                     </div>
                     <div class="flex flex-col sm:space-y-4">
                         <p class="text-xl">Contact</p>
-                        <a class="text-sm hover:underline" href="tel:+13603575040">360-657-5040</a>
+                        <a class="text-sm hover:underline" href="tel:+13606575040">360-657-5040</a>
                     </div>
                 </div>
                 <div class="flex flex-row justify-center items-center space-x-8 md:justify-end">
