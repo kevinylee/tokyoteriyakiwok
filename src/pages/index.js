@@ -6,7 +6,7 @@ import Menu from "../images/menu.pdf"
 import Info from "../components/info"
 import Footer from "../components/footer"
 
-// markup
+// index page
 const IndexPage = () => {
   return (
     <div className="main" class="font-manrope">
@@ -24,7 +24,7 @@ const IndexPage = () => {
         <link rel="icon" type="image/png" href={WebsiteIcon} sizes="64x64" />
       </Helmet>
       <header id="home" class="flex shrink justify-center items-center w-full">
-        <div class="flex flex-row flex-wrap items-center text-xl space-x-2 md:space-x-[25rem] md:mb-4">
+        <div class="flex flex-row flex-wrap items-center text-xl space-y-2 space-x-2 md:space-x-[25rem] md:mb-4">
           <a href="#home">
             <img class="w-[200px]" src={TokyoLogo} alt="Tokyo Teriyaki & Wok Logo"></img>
           </a>
